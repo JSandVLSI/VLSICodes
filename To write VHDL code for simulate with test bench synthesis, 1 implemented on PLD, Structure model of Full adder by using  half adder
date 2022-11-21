@@ -1,0 +1,65 @@
+Exp-1=To write VHDL code for simulate with test bench synthesis, 1
+implemented on PLD, Structure model of Full adder by using 
+half adder
+⦁	LOGIC GATE
+
+VHDL CODE :
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity test1 is
+    Port ( A : in  STD_LOGIC;
+           B : in  STD_LOGIC;
+           C : out  STD_LOGIC);
+end test1;
+
+architecture Behavioral of test1 is
+
+begin
+
+C <= NOT A AND B;
+
+end Behavioral;
+
+
+RTL :
+ 
+
+
+TEST BENCH: 
+ 
+
+
+⦁	Half ADDER
+
+CODE:
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity HAdder is
+    Port ( A : in  STD_LOGIC;
+           B : in  STD_LOGIC;
+           S : out  STD_LOGIC;
+           C : out  STD_LOGIC);
+end HAdder;
+
+architecture Behavioral of HAdder is
+
+begin
+S <= A XOR B;
+C <= A AND B;
+
+end Behavioral;
+
+
+RTL: 
+ 
+
+Test  code:
+	 
+
+TEST BENCH:
+ 
